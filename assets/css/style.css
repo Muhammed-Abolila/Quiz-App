@@ -1,0 +1,66 @@
+body {
+    background-image: url(../img/Wave-100s-1366px.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#quiz,
+#finish {
+    display: none !important
+}
+
+#correctOrIncorrectAlert,
+#alertAnswer {
+    opacity: 0;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.opacity-error-animation {
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 5s;
+}
+
+.opacity-animation {
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 2s;
+}
+
+.settings .content,
+.quiz .content,
+.finish .content {
+    background-color: #fff;
+}
+
+.settings .content h2,
+.quiz .head,
+.finish .content h2 {
+    background-color: #f8f9fa;
+    color: #653383;
+}
+
+.settings .content .form button,
+.quiz .content .question,
+.quiz .content .form button,
+.finish button {
+    background-color: #653383;
+    color: #fff;
+}
+
+.finish .content .score {
+    color: #653383;
+}

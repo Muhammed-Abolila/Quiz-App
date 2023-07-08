@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Start Settings Section  -->
+        <section id="setting" class="settings vh-100 w-75 m-auto d-flex justify-content-center align-items-center">
+            <div class="content rounded border w-75">
+                <h2 class="py-5 text-center m-0 fs-1">Setting Your Quiz</h2>
+                <hr class="m-0">
+                <div class="form px-3">
+                    <label class="py-3">Category</label><br>
+                    <select class="form-control" name="category" id="category">
+                        <option value="9">General Knowledge</option>
+                        <option value="10">Books</option>
+                        <option value="11">Films</option>
+                        <option value="12">Music</option>
+                        <option value="13">Musicals & theatres</option>
+                        <option value="14">Tv</option>
+                        <option value="15">Video Games</option>
+                        <option value="16">Board Games</option>
+                        <option value="17">Science & Nature</option>
+                        <option value="18">Computers</option>
+                        <option value="19">Mathematics</option>
+                        <option value="20">Mythology</option>
+                        <option value="21">Sports</option>
+                        <option value="22">Geography</option>
+                        <option value="23">History</option>
+                        <option value="24">Politics</option>
+                        <option value="25">Art</option>
+                        <option value="26">Celebrities</option>
+                        <option value="27">Animals</option>
+                    </select>
+                    <label class="pt-3 pb-2">Difficulty</label>
+                    <div>
+                        <input type="radio" name="difficulty" value="easy" checked>
+                        <span>Easy</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="difficulty" value="medium">
+                        <span>Medium</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="difficulty" value="hard">
+                        <span>Hard</span>
+                    </div>
+                    <input id="number" class="form-control mt-4" type="number" name="number" placeholder="Number of Questions">
+                    <div id="numberAlert" class="alert alert-danger py-1 my-1 invisible" role="alert"></div>
+                    <button id="startBtn" class="mb-3 py-2 px-4 rounded-pill border-0 float-end">Start</button>
+                </div>
+            </div>
+        </section>
+        <!-- End Settings Section -->
+        <!-- Start Quiz Section -->
+        <section id="quiz" class="quiz vh-100 w-75 m-auto d-flex justify-content-center align-items-center">
+            <div class="content rounded border w-75">
+                <div class="head">
+                    <h2 class="py-5 text-center m-0 fs-1">Quiz</h2>
+                    <div class="text-center mb-3 mx-2">
+                        <div class="question w-25 float-end py-2 rounded-pill"><span id="currentQuestion">2</span> of <span id="amountOfQuestions">2</span> Questions</div>
+                        <div id="correctOrIncorrectAlert" class=" py-2 px-3 rounded-pill float-start text-white"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr class="m-0">
+                </div>
+                <div class="form px-3">
+                    <div>
+                        <label class="py-3" id="question"></label><br>
+                        <div id="answers">
+
+                        </div>
+                        <div id="alertAnswer" class="alert alert-danger py-1 my-1" role="alert">
+                            Please Choose Your Answer!!
+                        </div>
+                        <button class="py-2 px-4 mb-3 rounded-pill border-0 float-end" id="submitBtn">Submit</button>
+                    </div>
+
+                </div>
+        </section>
+        <!-- End Quiz Section -->
+        <!-- Start Finish Section -->
+        <section id="finish" class="finish vh-100 w-75 m-auto d-flex justify-content-center align-items-center">
+            <div class="content rounded border w-75">
+                <h2 class="py-5 text-center m-0 fs-1">Finish</h2>
+                <hr class="m-0">
+                <div class="px-3">
+                    <div class="score text-center my-5 fs-3 fw-bold">Score
+                        <div id="scoreElmnt"></div>
+                    </div>
+                    <button class="my-3 py-2 px-4 rounded-pill border-0 float-end" id="tryAgain">Try Again?</button>
+                </div>
+            </div>
+        </section>
+        <!-- End Finish Section -->
+        </div>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js" type="module"></script>
+</body>
+
+</html>
