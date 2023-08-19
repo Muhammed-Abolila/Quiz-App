@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Quiz App</title>
 </head>
-
 <body>
     <div class="container">
         <!-- Start Settings Section  -->
-        <section id="setting" class="settings vh-100 w-75 m-auto d-flex justify-content-center align-items-center">
+        <section id="setting" class="settings vh-100 m-auto d-flex justify-content-center align-items-center">
             <div class="content rounded border w-75">
                 <h2 class="py-5 text-center m-0 fs-1">Setting Your Quiz</h2>
                 <hr class="m-0">
@@ -60,14 +59,13 @@
         </section>
         <!-- End Settings Section -->
         <!-- Start Quiz Section -->
-        <section id="quiz" class="quiz vh-100 w-75 m-auto d-flex justify-content-center align-items-center">
+        <section id="quiz" class="quiz vh-100 d-flex justify-content-center align-items-center">
             <div class="content rounded border w-75">
                 <div class="head">
                     <h2 class="py-5 text-center m-0 fs-1">Quiz</h2>
-                    <div class="text-center mb-3 mx-2">
-                        <div class="question w-25 float-end py-2 rounded-pill"><span id="currentQuestion">2</span> of <span id="amountOfQuestions">2</span> Questions</div>
-                        <div id="correctOrIncorrectAlert" class=" py-2 px-3 rounded-pill float-start text-white"></div>
-                        <div class="clearfix"></div>
+                    <div class="top mb-3 mx-2 d-flex justify-content-between align-items-center">
+                        <div class="question p-2 px-3 rounded-pill order-2"><span id="currentQuestion">2</span> of <span id="amountOfQuestions">2</span> Questions</div>
+                        <div id="correctOrIncorrectAlert" class="type py-2 px-3 rounded-pill text-white order-1"></div>
                     </div>
                     <hr class="m-0">
                 </div>

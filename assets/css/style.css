@@ -52,7 +52,6 @@ body {
     background-color: #f8f9fa;
     color: #653383;
 }
-
 .settings .content .form button,
 .quiz .content .question,
 .quiz .content .form button,
@@ -63,4 +62,22 @@ body {
 
 .finish .content .score {
     color: #653383;
+}
+
+
+
+@media screen and (max-width:576px){
+    .quiz .content .head .top{
+        flex-wrap: wrap;
+        align-items: center !important;
+    }
+    .quiz .content .head .top .question{
+        width:100%;
+        order:1 !important;
+        margin-bottom: 15px;
+    }
+    .quiz .content .head .top .type{
+        width:100%;
+        order:2 !important
+    }
 }
